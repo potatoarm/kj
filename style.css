@@ -1,0 +1,227 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #36bbce;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    display: block;
+}
+
+nav {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-link:hover::before {
+    content: "";
+    padding: 2px;
+    height: 3px;
+    border-radius: 5000px;
+    background-color: white;
+    position: relative;
+    left: -3px;
+    top: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+.post-text {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+    border-radius: 20px;
+}
+
+.post:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.post img {
+    border-radius: 15px;
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: #133aac;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.article-but:hover {
+    padding: 7px 70px 7px 70px;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.3s;
+}
+
+.full-image {
+    margin: 100px 0px 100px 0px;
+}
+
+.social {
+    display: block;
+    width: 30px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
+}
+
+.footer-text {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
+}
+
+.facebook {
+    display:inline;
+    position: fixed;
+    top: 100px;
+    right: 0px;
+    justify-content: right;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.facebook:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.facebook img{
+    margin-bottom: 30px;
+    float: right;
+    transition: 0.3s;
+}
+
+.facebook p {
+    color: rgba(0, 0, 0, 0.7);
+    right: 100px;
+    padding: 10px;
+    background-color: rgba(0, 191, 255, 0.7);
+    border-radius: 10px;
+}
+
+.facebook img:hover {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s;
+}
+
+.info .post:first-child::before {
+    left: 7px;
+    top: 7px;
+    content: "";
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background-image: url(https://img2.freepng.ru/20180623/tzw/aazq1b161.webp);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin-right: 8px;
+    position: absolute;
+    opacity: 0.8;
+    border-radius: 50px;
+}
+
+h1::before {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVo3yEgAwu1-Hu5ahilXbd8kLVtBjLLrQMg&s);
+    background-size: 30px 30px;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+h1::after {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVo3yEgAwu1-Hu5ahilXbd8kLVtBjLLrQMg&s);
+    background-size: 30px 30px;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    opacity: 0.9;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.address::before {
+    background-image: url('https://cdn-icons-png.freepik.com/512/13191/13191857.png?ga=GA1.1.201615845.1722007185');
+    background-size: 20px 20px;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.tel::before {
+    background-image: url('https://cdn-icons-png.freepik.com/512/455/455705.png?ga=GA1.1.201615845.1722007185');
+    background-size: 20px 20px;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
